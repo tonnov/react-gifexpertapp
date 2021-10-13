@@ -12,16 +12,17 @@ export const AddCategory = ({setCategories}) => {
             setInputValue('');
         }
     }
-    const handleChange = (e) => {
+    const handleInputChange = (e) => {
         setInputValue(e.target.value)
     }
     
     return (
         <form onSubmit={handleSubmit}>
+            <p>{inputValue}</p>
             <InputBox 
                 type="text"
                 value={inputValue}
-                onChange={handleChange}
+                onChange={handleInputChange}
                 placeholder="Add a new category..."
             />
         </form>

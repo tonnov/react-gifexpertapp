@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for GifGrid should render properly 1`] = `
+<Fragment>
+  <h3>
+    matrix
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Cargando...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Test for GifGrid should test custom hook 1`] = `
+<Fragment>
+  <h3>
+    matrix
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id={1}
+      key="1"
+      title="titulo"
+      url="https://imagenes.com/mygif.gif"
+    />
+  </div>
+</Fragment>
+`;

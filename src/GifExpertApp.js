@@ -2,14 +2,9 @@ import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory'
 import { GifGrid } from './components/GifGrid'
 
-export const GiftExpertApp = () => {
+export const GifExpertApp = ({ defaultCategories = ['ironman'] }) => {
 
-    const [categories, setCategories] = useState(['matrix']);
-
-    // const handleAdd = () => {
-    //     const rnd = Math.floor(Math.random() * 100);
-    //     setCategories( cat => [...cat, `val ${rnd}`]);
-    // }
+    const [categories, setCategories] = useState( defaultCategories );
 
     return (
         <>
